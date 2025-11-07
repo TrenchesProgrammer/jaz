@@ -43,8 +43,11 @@ const faqData = [
       "We recommend booking at least 2–4 weeks ahead to secure your preferred date, especially during weekends and festive seasons.",
   },
 ];
-
-const FaqItem = ({ question, answer }) => {
+interface FaqProps {
+  question: string;
+  answer: string;
+}
+const FaqItem = ({ question, answer }:FaqProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
