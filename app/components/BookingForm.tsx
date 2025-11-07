@@ -5,13 +5,13 @@ const bellefair = Bellefair({ subsets: ["latin"], weight: "400" });
 
 const BookingForm = () => {
   return (
-    <section id="contact" className="padding-container flex justify-between mt-20">
-      <div className="w-[40%] mb-10">
+    <section id="contact" className="padding-container flex flex-col md:flex-row justify-between mt-20">
+      <div className="md:w-[40%] mb-10">
         <h3 className={`${bellefair.className} text-4xl md:text-5xl`}>
           BOOK NOW WITH JAZ EVENTS
         </h3>
       </div>
-      <form className="max-w-3xl md:w-[55%] mx-auto flex flex-col gap-3 rounded-lg">
+      <form className="max-w-3xl w-full md:w-[55%] mx-auto flex flex-col gap-3 rounded-lg">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-300">Full Name *</label>
             <input type="text" id="name" name="name" className="mt-1 block w-full bg-[#1a1a1a]  border-gray-700 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white p-2" />

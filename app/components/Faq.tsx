@@ -78,14 +78,14 @@ const FaqItem = ({ question, answer }:FaqProps) => {
 
 const Faq = () => {
   return (
-    <section className="padding-container mt-20 gap-10 flex">
-      <div className="text-center md:text-left w-[40%] mb-10">
+    <section className="padding-container mt-20 gap-10 flex flex-col md:flex-row">
+      <div className="text-center md:text-left md:w-[40%] mb-10">
         <p className="text-[#e0e0e0]">HAVE A QUESTION?</p>
         <h3 className={`${bellefair.className} text-4xl md:text-5xl`}>
           FREQUENTLY ASKED QUESTIONS
         </h3>
       </div>
-      <div className="max-w-3xl w-[60%] mx-auto">
+      <div className="max-w-3xl w-full md:w-[60%] mx-auto">
         {faqData.map((faq, index) => (
           <FaqItem key={index} question={faq.question} answer={faq.answer} />
         ))}

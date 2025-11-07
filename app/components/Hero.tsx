@@ -2,8 +2,24 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import '../globals.css'
+import { useEffect, useState } from 'react';
+
 import { Bellefair } from "next/font/google";
 const bellefair = Bellefair({ subsets: ["latin"], weight: "400" });
+
+function useMediaQuery(query:string) {
+  const [matches, setMatches] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    const listener = () => setMatches(media.matches);
+    listener();
+    media.addEventListener('change', listener);
+    return () => media.removeEventListener('change', listener);
+  }, [query]);
+
+  return matches;
+}
 
 interface ScrollingColumnProps {
   images: string[];
@@ -53,16 +69,6 @@ const galleryColumns: {
     speed: 28,
   },
 ];
-const images = [
-  "/img1.jpg",
-  "/img2.jpg",
-  "/img3.jpg",
-  "/img4.jpg",
-  "/img5.jpg",
-  "/img6.jpg",
-  "/img7.jpg",
-  "/img8.jpg",
-];
 
 const AutoScrollColumn = ({
   images,
@@ -80,7 +86,7 @@ const AutoScrollColumn = ({
           animation: `${animationName} ${animationDuration} linear infinite`,
         }}
       >
-        {/* Render images twice for seamless loop */}
+       
         {[...images, ...images].map((src, index) => (
           <div
             key={index}
@@ -103,6 +109,15 @@ const AutoScrollColumn = ({
 };
 
 const Hero = () => {
+  const isSmall = useMediaQuery('(max-width: 640px)');
+  const isMedium = useMediaQuery('(max-width: 1024px)');
+  if (isSmall) {
+    galleryColumns.splice(2, galleryColumns.length );
+  } else if (isMedium) {
+    galleryColumns.splice(3, galleryColumns.length );
+  }else {
+    galleryColumns.splice(0, 0 );
+  }
   return (
     <section className="relative flex gap-[9px] w-full bg-black">
       {galleryColumns

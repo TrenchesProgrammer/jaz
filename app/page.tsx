@@ -11,18 +11,18 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <section className="flex  gap-10 padding-container justify-center mt-20 px-4">
+      <section className="flex padding-container md:justify-between gap-5 md:gap-0  md:flex-row  mt-20 ">
         <div className="flex items-center gap-5">
-          <FaRegSnowflake className="w-12 h-12 md:w-13 md:h-13" />
-          <p className="text-lg md:text-xl ">Fully Air Conditioned</p>
+          <FaRegSnowflake className="w-10 h-10 md:w-13 md:h-13" />
+          <p className="text-sm md:text-lg ">Fully Air Conditioned</p>
         </div>
         <div className="flex items-center gap-5">
-          <BsFillLightningChargeFill className="w-12 h-12 md:w-13 md:h-13" />
-          <p className="text-lg md:text-xl ">Stable Electricity</p>
+          <BsFillLightningChargeFill className="w-10 h-10 md:w-13 md:h-13" />
+          <p className="text-sm md:text-lg ">Stable Electricity</p>
         </div>
         <div className="flex items-center gap-5">
-          <MdOutlineSecurity className="w-12 h-12 md:w-13 md:h-13" />
-          <p className="text-lg md:text-xl ">24/7 Security Personnel</p>
+          <MdOutlineSecurity className="w-10 h-10 md:w-13 md:h-13" />
+          <p className="text-sm md:text-lg ">24/7 Security Personnel</p>
         </div>
       </section>
       <section className="padding-container mt-20 flex flex-col md:flex-row gap-10">
@@ -45,7 +45,7 @@ export default function Home() {
             beauty, and comfort to make your special day truly remarkable.
           </p>
         </div>
-        <Image src="/event-1.jpg" className="rounded-lg w-full md:w-1/2  " width={100} height={100} alt="event" />
+        <Image src="/event-1.svg" className="rounded-lg w-full md:w-1/2  " width={100} height={100} alt="event" />
       </section>
       <Faq />
       <BookingForm />
