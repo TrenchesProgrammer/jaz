@@ -7,9 +7,9 @@ const page = () => {
     <div className="pt-20 padding-container">
       <h3 className={`${bellefair.className} text-5xl`}>REFUND POLICY</h3>
       <div className="flex flex-col gap-40">
-        <div className="flex justify-between mt-50">
-          <h4>DEPOSITS</h4>
-          <div className="w-[50%] flex flex-col gap-10 ">
+        <div className="flex-col md:flex-row gap-3 flex justify-between mt-50">
+          <h4 className="font-bold">DEPOSITS</h4>
+          <div className=" w-full md:w-[50%] flex flex-col gap-10 ">
             <div className="gap-6 flex flex-col">
               <p>Non-Refundable Deposit:</p>
               <p>
@@ -29,9 +29,9 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between">
-          <h4>CANCELLATIONS</h4>
-          <div className="w-[50%] flex flex-col gap-10 ">
+        <div className="flex-col md:flex-row flex gap-3 justify-between">
+          <h4 className="font-bold">CANCELLATIONS</h4>
+          <div className="md:w-[50%] w-full flex flex-col gap-10 ">
             <div className="gap-6 flex flex-col">
               <p>Client-Initiated Cancellations:</p>
               <p>
@@ -51,9 +51,9 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between">
-          <h4>REFUNDS & PAYMENTS</h4>
-          <div className="w-[50%] flex flex-col gap-10 ">
+        <div className="flex flex-col md:flex-row gap-3 justify-between">
+          <h4 className="font-bold">REFUNDS & PAYMENTS</h4>
+          <div className="md:w-[50%] w-full flex flex-col gap-10 ">
             <div className="gap-6 flex flex-col">
               <p>No Refunds After Confirmation:</p>
               <p>
@@ -72,9 +72,9 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between">
-          <h4>SATISFACTION</h4>
-          <div className="w-[50%] flex flex-col gap-10 ">
+        <div className="flex flex-col md:flex-row gap-3 justify-between">
+          <h4 className="font-bold">SATISFACTION</h4>
+          <div className="md:w-[50%] w-full flex flex-col gap-10 ">
             <div className="gap-6 flex flex-col">
               <p>Service Quality:</p>
               <p>

@@ -20,6 +20,17 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Environment Variables
+
+To send emails with booking details, you need to create a `.env.local` file in the root of the project and add the following environment variables:
+
+```
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+```
+
+Replace `your-email@gmail.com` with your Gmail address and `your-app-password` with an app password generated from your Google account.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body
         className={`${notoSans.className}antialiased`}
       >
+        <Toaster/>
         <Navbar/>
         {children}
         <Footer />
