@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
 
   const mailOptions = {
     from: process.env.NEXT_EMAIL_USER,
-    to: "alexanderajadi533@gmail.com",
+    to: "alexanderajadi533@gmail.com, ireanuheritage@gmail.com",
     subject: "New Booking from Jaz Events",
     html: `
       <h1>New Booking Details</h1>
