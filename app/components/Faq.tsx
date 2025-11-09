@@ -81,7 +81,7 @@ const Faq = () => {
     <section className="padding-container mt-20 gap-10 flex flex-col md:flex-row">
       <div className="text-center md:text-left md:w-[40%] mb-10">
         <p className="text-[#e0e0e0]">HAVE A QUESTION?</p>
-        <h3 className={`${bellefair.className} text-4xl md:text-5xl`}>
+        <h3 className={`${bellefair.className} text-left text-4xl md:text-center md:text-5xl`}>
           FREQUENTLY ASKED QUESTIONS
         </h3>
       </div>

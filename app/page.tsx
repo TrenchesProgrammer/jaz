@@ -51,17 +51,25 @@ export default function Home() {
       <Faq />
       <section className="padding-container flex flex-col gap-5 mt-50">
         <p className="text-center">GALLERY</p>
-        <h3 className={`${bellefair.className} text-5xl text-center`}>EXPLORE OUR GALLERY</h3>
-        <div className="flex gap-3">
-          <Image src="/gallery-1.svg" className="w-[50%]" alt="" height={200} width={200}/>
-          <Image src="/gallery-2.jpeg" className="w-[25%]" alt="" height={200} width={200}/>
-          <Image src="/gallery-3.jpeg" className="w-[25%]" alt="" height={200} width={200}/>
-        </div>        
-        <div className="flex gap-3">
-          <Image src="/gallery-4.jpeg" className="w-[25%]" alt="" height={200} width={200}/>
-          <Image src="/gallery-3.jpeg" className="w-[25%]" alt="" height={200} width={200}/>
-          <Image src="/gallery-5.svg" className="w-[50%]" alt="" height={200} width={200}/>
+        <h3 className={`${bellefair.className} text-5xl text-left md:text-center`}>EXPLORE OUR GALLERY</h3>
+        <div className="flex flex-col gap-1 md:gap-3">
+          <div className="flex flex-col md:flex-row gap-1 md:gap-3">
+            <Image src="/gallery-1.svg" className="w-full md:w-[50%]" alt="" height={200} width={200}/>
+            <div className="w-full flex gap-1 md:flex-3 md:w-[50%]" >
+              <Image src="/gallery-2.jpeg" className="w-[50%]" alt="" height={200} width={200}/>
+              <Image src="/gallery-3.jpeg" className="w-[50%]" alt="" height={200} width={200}/>              
+            </div>
+          </div>        
+          <div className="flex flex-col-reverse w-full md:w-[50%] gap-1 md:gap-3">
+            <div className="w-full flex gap-1 md:flex-3 md:w-[50%]">
+              <Image src="/gallery-4.jpeg" className="w-[50%]" alt="" height={200} width={200}/>
+              <Image src="/gallery-3.jpeg" className="w-[50%]" alt="" height={200} width={200}/>
+            </div>
+              <Image src="/gallery-5.svg" className="w-full md:w-[50%]" alt="" height={200} width={200}/>              
+
+          </div>         
         </div>
+
         <Link className="text-xl mt-5 text-center" href="/">VIEW FULL GALLERY</Link>
       </section>
       <BookingForm />
