@@ -1,5 +1,8 @@
 "use client";
+import { Anton } from "next/font/google";
 import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
+
+const anton = Anton({ subsets: ["latin"], weight: "400" });
 
 const Footer = () => {
   return (
@@ -39,7 +42,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-800 mt-10 pt-5 text-center">
+      <div className="border-t border-gray-800 flex justify-between mt-10 pt-5 text-center">
+        <h3 className={`${anton.className} text-xl`}>JAZ</h3>
         <p>&copy; {new Date().getFullYear()} Jaz Events Centre. All rights reserved.</p>
       </div>
     </footer>

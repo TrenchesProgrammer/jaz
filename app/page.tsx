@@ -6,6 +6,7 @@ import BookingForm from "./components/BookingForm";
 import Faq from "./components/Faq";
 import Hero from "./components/Hero";
 import { Bellefair } from "next/font/google";
+import Link from "next/link";
 const bellefair = Bellefair({ subsets: ["latin"], weight: "400" });
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-5">
           <MdOutlineSecurity className="w-10 h-10 md:w-13 md:h-13" />
-          <p className="text-sm md:text-lg ">24/7 Security Personnel</p>
+          <p className="text-sm md:text-lg md:block hidden ">24/7 Security Personnel</p>
         </div>
       </section>
       <section className="padding-container mt-20 flex flex-col md:flex-row gap-10">
@@ -48,6 +49,21 @@ export default function Home() {
         <Image src="/event-1.svg" className="rounded-lg w-full md:w-1/2  " width={100} height={100} alt="event" />
       </section>
       <Faq />
+      <section className="padding-container flex flex-col gap-5 mt-50">
+        <p className="text-center">GALLERY</p>
+        <h3 className={`${bellefair.className} text-5xl text-center`}>EXPLORE OUR GALLERY</h3>
+        <div className="flex gap-3">
+          <Image src="/gallery-1.svg" className="w-[50%]" alt="" height={200} width={200}/>
+          <Image src="/gallery-2.jpeg" className="w-[25%]" alt="" height={200} width={200}/>
+          <Image src="/gallery-3.jpeg" className="w-[25%]" alt="" height={200} width={200}/>
+        </div>        
+        <div className="flex gap-3">
+          <Image src="/gallery-4.jpeg" className="w-[25%]" alt="" height={200} width={200}/>
+          <Image src="/gallery-3.jpeg" className="w-[25%]" alt="" height={200} width={200}/>
+          <Image src="/gallery-5.svg" className="w-[50%]" alt="" height={200} width={200}/>
+        </div>
+        <Link className="text-xl mt-5 text-center" href="/">VIEW FULL GALLERY</Link>
+      </section>
       <BookingForm />
     </div>
   );
