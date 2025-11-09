@@ -137,27 +137,25 @@ const Hero = () => {
         >
           JAZ EVENTS <br /> CENTRE
         </h1>
-        <p className="max-w-xl text-sm md:text-base mb-6 text-[#e0e0e0]">
+        <p className="max-w-100 text-sm md:text-base mb-6 text-[#e0e0e0]">
           Experience elegance and comfort at Jaz Events Centre — Ibadan’s
           premium venue for weddings, corporate gatherings, and celebrations.
         </p>
-        <div className="flex flex-col md:flex-row w-full md:w-fit gap-5">
+        <div className="flex flex-col md:flex-row max-w-100 w-full md:w-fit gap-5">
           <a
             href="#contact"
-            className="bg-white text-black px-6 py-2 rounded-md hover:bg-gray-200 transition"
+            className="bg-white  text-black px-6 py-2 rounded-md hover:bg-gray-200 transition"
           >
             BOOK NOW
           </a>
           <a
             href="#contact"
-            className="bg-none border border-[#e0e0e0] text-white px-6 py-2 rounded-md transition"
+            className="bg-none max-w-100 border border-[#e0e0e0] text-white px-6 py-2 rounded-md transition"
           >
             VIEW GALLERY
           </a>
         </div>
-        <div className="absolute rounded-md text-[#e0e0e0] bottom-0 left-0 md:left-10 p-5 md:p-10 bg-[#00000086] ">
-          <p>Eleyele</p>
-        </div>
+
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <section className="flex padding-container md:justify-between gap-5 md:gap-0  md:flex-row  mt-20 ">
+      <section className="flex padding-container justify-center md:justify-between gap-5 md:gap-0  md:flex-row  mt-20 ">
         <div className="flex items-center gap-5">
           <FaRegSnowflake className="w-10 h-10 md:w-13 md:h-13" />
           <p className="text-sm md:text-lg ">Fully Air Conditioned</p>
@@ -22,11 +22,11 @@ export default function Home() {
           <p className="text-sm md:text-lg ">Stable Electricity</p>
         </div>
         <div className="flex items-center gap-5">
-          <MdOutlineSecurity className="w-10 h-10 md:w-13 md:h-13" />
+          <MdOutlineSecurity className="w-10 h-10 md:block hidden  md:w-13 md:h-13" />
           <p className="text-sm md:text-lg md:block hidden ">24/7 Security Personnel</p>
         </div>
       </section>
-      <section className="padding-container mt-20 flex flex-col md:flex-row gap-10">
+      <section className="padding-container mt-20 flex flex-col-reverse md:flex-row gap-10">
         <div className="flex flex-col gap-4 w-full md:w-1/2">
           <p className="text-[#e0e0e0]">ABOUT JAZ EVENTS</p>
           <h3 className={`${bellefair.className} text-4xl md:text-5xl`}>
