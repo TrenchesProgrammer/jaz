@@ -8,6 +8,7 @@ const bellefair = Bellefair({ subsets: ["latin"], weight: "400" });
 const BookingForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [event, setEvent] = useState("");
   const [date, setDate] = useState("");
   const [guests, setGuests] = useState("");
@@ -15,6 +16,7 @@ const BookingForm = () => {
   const [errors, setErrors] = useState({
     name: "",
     phone: "",
+    email: "",
     event: "",
     date: "",
     guests: "",
@@ -24,6 +26,7 @@ const BookingForm = () => {
     const newErrors = {
       name: "",
       phone: "",
+      email: "",
       event: "",
       date: "",
       guests: "",
@@ -34,6 +37,13 @@ const BookingForm = () => {
     } else if (!/^\d+$/.test(phone)) {
       newErrors.phone = "Phone number must be a valid number";
     }
+    if (!email) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Email is invalid";
+    }
+  
+
     if (!event) newErrors.event = "Event type is required";
     if (!date) {
       newErrors.date = "Preferred date is required";
@@ -66,6 +76,7 @@ const BookingForm = () => {
           body: JSON.stringify({
             name,
             phone,
+            email,
             event,
             date,
             guests,
@@ -79,6 +90,7 @@ const BookingForm = () => {
           toast.success("Form submitted successfully!");
           setName("");
           setPhone("");
+          setEmail("");
           setEvent("");
           setDate("");
           setGuests("");
@@ -162,6 +174,28 @@ const BookingForm = () => {
             <p className="text-red-500 text-xs">{errors.phone}</p>
           )}
         </div>
+        <div>
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-gray-300"
+          >
+            Email *
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            className="mt-1 block w-full bg-[#1a1a1a] border  border-[#242424] rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white p-2"
+          />
+          {errors.email && (
+            <p className="text-red-500 text-xs">{errors.email}</p>
+          )}
+        </div>
+
         <div>
           <label
             htmlFor="eventType"

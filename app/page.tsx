@@ -55,18 +55,17 @@ export default function Home() {
         <div className="flex flex-col gap-1 md:gap-3">
           <div className="flex flex-col md:flex-row gap-1 md:gap-3">
             <Image src="/gallery-1.svg" className="w-full md:w-[50%]" alt="" height={200} width={200}/>
-            <div className="w-full flex gap-1 md:flex-3 md:w-[50%]" >
+            <div className="w-full flex gap-1 md:gap-3 md:w-[50%]" >
               <Image src="/gallery-2.jpeg" className="w-[50%]" alt="" height={200} width={200}/>
               <Image src="/gallery-3.jpeg" className="w-[50%]" alt="" height={200} width={200}/>              
             </div>
           </div>        
-          <div className="flex flex-col-reverse w-full md:w-[50%] gap-1 md:gap-3">
-            <div className="w-full flex gap-1 md:flex-3 md:w-[50%]">
+          <div className="flex flex-col-reverse md:flex-row w-full gap-1 md:gap-3">
+            <div className="w-full flex gap-1 md:gap-3 md:w-[50%]">
               <Image src="/gallery-4.jpeg" className="w-[50%]" alt="" height={200} width={200}/>
               <Image src="/gallery-3.jpeg" className="w-[50%]" alt="" height={200} width={200}/>
             </div>
               <Image src="/gallery-5.svg" className="w-full md:w-[50%]" alt="" height={200} width={200}/>              
-
           </div>         
         </div>
 
