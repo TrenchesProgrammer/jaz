@@ -13,22 +13,22 @@ const Navbar = () => {
   return (
     <nav className="padding-container py-3 text-[#e0e0e0] fixed w-full max-w-[1440px] z-50 bg-black">
       <div className="flex justify-between items-center">
-        <h2 className={`${anton.className} text-2xl tracking-wide`}>JAZ</h2>
+        <Link href="/" className={`${anton.className} text-2xl tracking-wide`}>JAZ</Link>
         <div className="hidden md:flex gap-5 items-center">
           <Link href="/about">About</Link>
           <Link href="/gallery">Gallery</Link>
           <Link href="/booking#faq">Faq</Link>
           <div className="flex items-center gap-2">
             <BsTelephone />
-            <Link href="tel:08118300072">+234 (0) 811 830 0072</Link>
+            <Link href="tel:08033065857">+234 (0) 803 306 5857</Link>
           </div>
-          <button className="border border-[#e0e0e0] px-5 rounded-md py-2">
+          <Link href="/booking" className="border border-[#e0e0e0] px-5 rounded-md py-2">
             BOOK
-          </button>
+          </Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <FaTimes className="w-6 h-6" /> : <FaBars className="w-6 h-6" />}
+            {isOpen ? <FaTimes name="close" className="w-6 h-6" /> : <FaBars name="hamburger" className="w-6 h-6" />}
           </button>
         </div>
       </div>
@@ -36,22 +36,22 @@ const Navbar = () => {
         <div className="md:hidden mt-4">
           <ul className="flex flex-col gap-5 items-center">
             <li>
-              <p>About</p>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <p>Gallery</p>
+              <Link href="/gallery">Gallery</Link>
             </li>
             <li>
-              <p>Faq</p>
+              <Link href="/booking#faq">Faq</Link>
             </li>
             <li className="flex items-center gap-2">
               <BsTelephone />
-              <p>+234 (0) 811 830 0072</p>
+              <Link href="tel:08033065857">+234 (0) 803 306 5857</Link>
             </li>
             <li>
-              <button className="border border-[#e0e0e0] px-5 rounded-md py-2">
+              <Link href="/booking" className="border border-[#e0e0e0] px-5 rounded-md py-2">
                 BOOK
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 import { Anton } from "next/font/google";
+import Link from "next/link";
 import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
 
 const anton = Anton({ subsets: ["latin"], weight: "400" });
@@ -24,8 +25,8 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Contact Us</h3>
           <p>Eleyele, Ibadan, Oyo State, Nigeria</p>
-          <p>Email: info@jazevents.com</p>
-          <p>Phone: +234 123 456 7890</p>
+          <p>Email: jazeventcenter@gmail.com</p>
+          <p>Phone: +234 9031450232</p>
         </div>
         <div>
           <h3 className="text-lg font-bold mb-4">Follow Us</h3>
@@ -43,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-800 flex justify-between mt-10 pt-5 text-center">
-        <h3 className={`${anton.className} text-xl`}>JAZ</h3>
+        <Link href="/" className={`${anton.className} text-xl`}>JAZ</Link>
         <p>&copy; {new Date().getFullYear()} Jaz Events Centre. All rights reserved.</p>
       </div>
     </footer>
