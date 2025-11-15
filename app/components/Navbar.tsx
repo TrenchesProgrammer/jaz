@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { Anton } from "next/font/google";
 import { BsTelephone } from "react-icons/bs";
@@ -14,12 +15,12 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <h2 className={`${anton.className} text-2xl tracking-wide`}>JAZ</h2>
         <div className="hidden md:flex gap-5 items-center">
-          <p>About</p>
-          <p>Gallery</p>
-          <p>Faq</p>
+          <Link href="/about">About</Link>
+          <Link href="/gallery">Gallery</Link>
+          <Link href="/booking#faq">Faq</Link>
           <div className="flex items-center gap-2">
             <BsTelephone />
-            <p>+234 (0) 811 830 0072</p>
+            <Link href="tel:08118300072">+234 (0) 811 830 0072</Link>
           </div>
           <button className="border border-[#e0e0e0] px-5 rounded-md py-2">
             BOOK

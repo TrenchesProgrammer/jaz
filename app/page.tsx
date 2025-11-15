@@ -37,7 +37,7 @@ export default function Home() {
             celebrated in style. Located in the serene heart of Ibadan, our
             modern event space was designed to host unforgettable moments. From
             weddings and birthdays to corporate gatherings, concerts, and
-            conferences. Our spacious hall accommodates over 200 guests
+            conferences. Our spacious hall accommodates over 1000 guests
             comfortably, featuring full air-conditioning, uninterrupted power
             supply, and top-tier security to ensure every event runs smoothly.
             We understand that hosting an event is more than just finding a
@@ -52,13 +52,13 @@ export default function Home() {
       <section className="padding-container flex flex-col gap-5 mt-50">
         <p className="text-center">GALLERY</p>
         <h3 className={`${bellefair.className} text-5xl text-left md:text-center`}>EXPLORE OUR GALLERY</h3>
-        <div className="flex flex-col gap-3 ">
+        <div className="flex flex-col gap-1 md:gap-3 ">
           {/* First row */}
-          <div className="flex flex-col md:flex-row gap-3">
+          <div className="flex flex-col md:flex-row gap-1 md:gap-3">
             <div className="w-full md:w-[50%] h-100">
               <Image src="/gallery-1.svg" className="w-full h-full object-cover" alt="" height={200} width={200}/>
             </div>
-            <div className="w-full flex gap-3 md:w-[50%]" >
+            <div className="w-full flex gap-1 md:gap-3 md:w-[50%]" >
               <div className="w-[50%] h-100">
                 <Image src="/gallery-2.jpeg" className="w-full h-full object-cover" alt="" height={200} width={200}/>
               </div>
@@ -68,8 +68,8 @@ export default function Home() {
             </div>
           </div>        
           {/* Second row */}
-          <div className="flex flex-col-reverse md:flex-row w-full gap-3 ">
-            <div className="w-full flex gap-3  md:w-[50%]">
+          <div className="flex flex-col-reverse md:flex-row w-full gap-1 md:gap-3 ">
+            <div className="w-full flex gap-1 md:gap-3  md:w-[50%]">
               <div className="w-[50%] h-100">
                 <Image src="/gallery-4.svg" className="w-full h-full object-cover" alt="" height={200} width={200}/>
               </div>

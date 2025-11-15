@@ -143,13 +143,13 @@ const Hero = () => {
         </p>
         <div className="flex flex-col md:flex-row max-w-100 w-full md:w-fit gap-5">
           <a
-            href="#contact"
+            href="/booking#book"
             className="bg-white  text-black px-6 py-2 rounded-md hover:bg-gray-200 transition"
           >
             BOOK NOW
           </a>
           <a
-            href="#contact"
+            href="/gallery"
             className="bg-none max-w-100 border border-[#e0e0e0] text-white px-6 py-2 rounded-md transition"
           >
             VIEW GALLERY

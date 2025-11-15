@@ -5,7 +5,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 const bellefair = Bellefair({ subsets: ["latin"], weight: "400" });
 
-const BookingForm = () => {
+const BookingForm = ({id}: {id: string}) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -105,7 +105,7 @@ const BookingForm = () => {
   };
   return (
     <section
-      id="contact"
+      id={id}
       className="padding-container flex flex-col md:flex-row justify-between mt-20"
     >
       <div className="md:w-[40%] text-sm mb-10 flex flex-col gap-10">
@@ -116,6 +116,7 @@ const BookingForm = () => {
           <div>
             <p className="text-[#7e7e7e]">Phone number:</p>
             <p>+234 (0) 811 830 0072</p>
+            <p>+234 (0) 903 145 0232</p>
           </div>
           <div>
             <p className="text-[#7e7e7e]">Address:</p>
@@ -123,7 +124,7 @@ const BookingForm = () => {
           </div>
           <div>
             <p className="text-[#7e7e7e]">Email:</p>
-            <p>jaz@gmail.com</p>
+            <p>jazeventcenter@gmail.com</p>
           </div>
           <Link className="text-xl mt-5 " href="/refunds">
             VIEW REFUND POLICY

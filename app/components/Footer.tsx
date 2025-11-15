@@ -30,7 +30,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Follow Us</h3>
           <div className="flex gap-5">
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/jazevents_/" aria-label="Instagram">
               <FaInstagram className="w-6 h-6" />
             </a>
             <a href="#" aria-label="TikTok">
