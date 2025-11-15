@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link href="/booking#faq">Faq</Link>
           <div className="flex items-center gap-2">
             <BsTelephone />
-            <Link href="tel:08033065857">+234 (0) 803 306 5857</Link>
+            <Link href="tel:09028708098">+234 (0) 902 870 8098</Link>
           </div>
           <Link href="/booking" className="border border-[#e0e0e0] px-5 rounded-md py-2">
             BOOK
@@ -46,7 +46,7 @@ const Navbar = () => {
             </li>
             <li className="flex items-center gap-2">
               <BsTelephone />
-              <Link href="tel:08033065857">+234 (0) 803 306 5857</Link>
+            <Link href="tel:09028708098">+234 (0) 902 870 8098</Link>
             </li>
             <li>
               <Link href="/booking" className="border border-[#e0e0e0] px-5 rounded-md py-2">

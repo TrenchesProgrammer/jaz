@@ -115,7 +115,8 @@ const BookingForm = ({id}: {id: string}) => {
         <div className="flex flex-col gap-5">
           <div>
             <p className="text-[#7e7e7e]">Phone numbers:</p>
-            <p>+234 (0) 903 145 0232</p>
+            <p>+234 (0) 902 870 8098</p>
+            <p>+234 (0) 913 235 2070</p>
             <p>+234 (0) 803 306 5857</p>
           </div>
           <div>
