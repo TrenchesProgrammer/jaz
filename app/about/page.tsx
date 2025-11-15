@@ -6,12 +6,12 @@ const bellefair = Bellefair({ subsets: ["latin"], weight: "400" });
 const page = () => {
   return (
     <div className="">
-      <div className="h-screen w-full bg-about-cover flex flex-col relative justify-end pb-40 p-5  md:pb-30 gap-5 px-32">
+      <div className="h-screen w-full bg-about-cover flex flex-col relative justify-end pb-40 p-5  md:pb-30 gap-5 pl-5 md:pl-32">
         <div className="absolute inset-0 bg-black/50 z-1 h-full w-full " />
         <div className="z-1 flex flex-col gap-3">
-          <p className="text-[#b3b3b3] w-full">ABOUT JAZ EVENTS</p>
-          <h3 className={`${bellefair.className} text-3xl md:text-5xl`}>
-            THE BEST EVENTS CENTER IN IBADAN
+          <p className="text-[#b3b3b3] w-full flex-nowrap">ABOUT JAZ EVENTS</p>
+          <h3 className={`${bellefair.className} flex-nowrap text-3xl md:text-5xl`}>
+            THE BEST EVENTS <br /> CENTER IN IBADAN
           </h3>
         </div>
       </div>
