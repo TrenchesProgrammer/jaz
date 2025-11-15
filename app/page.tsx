@@ -48,7 +48,7 @@ export default function Home() {
         </div>
         <Image src="/event-1.svg" className="rounded-lg w-full md:w-1/2  " width={100} height={100} alt="event" />
       </section>
-      <Faq />
+      <Faq id="faq" />
       <section className="padding-container flex flex-col gap-5 mt-50">
         <p className="text-center">GALLERY</p>
         <h3 className={`${bellefair.className} text-5xl text-left md:text-center`}>EXPLORE OUR GALLERY</h3>
@@ -85,7 +85,7 @@ export default function Home() {
 
         <Link className="text-xl mt-5 text-center" href="/">VIEW FULL GALLERY</Link>
       </section>
-      <BookingForm />
+      <BookingForm id="book" />
     </div>
   );
 }
