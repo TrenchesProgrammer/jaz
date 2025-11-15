@@ -56,14 +56,13 @@ export async function POST(req: NextRequest) {
 
   const businessMailOptions = {
     from: process.env.NEXT_PUBLIC_EMAIL_USER,
-    to: "alexanderajadi533@gmail.com, ireanuheritage@gmail.com, samajadi@yahoo.com",
+    to: "alexanderajadi533@gmail.com, ireanuoluwah@gmail.com, samajadi@yahoo.com",
     subject: "New Booking from Jaz Events",
     html: `
       <h1>New Booking Details</h1>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Optional Email:</strong> ${optionalEmail}</p>
       <p><strong>Event Type:</strong> ${event}</p>
       <p><strong>Preferred Date:</strong> ${date}</p>
       <p><strong>Number of Guests:</strong> ${guests}</p>

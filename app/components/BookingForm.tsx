@@ -115,7 +115,6 @@ const BookingForm = ({id}: {id: string}) => {
         <div className="flex flex-col gap-5">
           <div>
             <p className="text-[#7e7e7e]">Phone numbers:</p>
-            <p>+234 (0) 811 830 0072</p>
             <p>+234 (0) 903 145 0232</p>
             <p>+234 (0) 803 306 5857</p>
           </div>
@@ -126,6 +125,7 @@ const BookingForm = ({id}: {id: string}) => {
           <div>
             <p className="text-[#7e7e7e]">Email:</p>
             <p>jazeventcenter@gmail.com</p>
+            <p>samajadi@yahoo.com</p>
           </div>
           <Link className="text-xl mt-5 " href="/refunds">
             VIEW REFUND POLICY

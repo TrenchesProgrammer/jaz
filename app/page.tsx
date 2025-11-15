@@ -51,9 +51,8 @@ export default function Home() {
       <Faq id="faq" />
       <section className="padding-container flex flex-col gap-5 mt-50">
         <p className="text-center">GALLERY</p>
-        <h3 className={`${bellefair.className} text-5xl text-left md:text-center`}>EXPLORE OUR GALLERY</h3>
+        <h3 className={`${bellefair.className} text-4xl md:text-5xl text-left md:text-center`}>EXPLORE OUR GALLERY</h3>
         <div className="flex flex-col gap-1 md:gap-3 ">
-          {/* First row */}
           <div className="flex flex-col md:flex-row gap-1 md:gap-3">
             <div className="w-full md:w-[50%] h-100">
               <Image src="/gallery-1.svg" className="w-full h-full object-cover" alt="" height={200} width={200}/>
@@ -67,7 +66,6 @@ export default function Home() {
               </div>
             </div>
           </div>        
-          {/* Second row */}
           <div className="flex flex-col-reverse md:flex-row w-full gap-1 md:gap-3 ">
             <div className="w-full flex gap-1 md:gap-3  md:w-[50%]">
               <div className="w-[50%] h-100">
@@ -82,8 +80,7 @@ export default function Home() {
             </div>
           </div>         
         </div>
-
-        <Link className="text-xl mt-5 text-center" href="/">VIEW FULL GALLERY</Link>
+        <Link className="text-xl mt-5 text-center" href="/gallery">VIEW FULL GALLERY</Link>
       </section>
       <BookingForm id="book" />
     </div>
